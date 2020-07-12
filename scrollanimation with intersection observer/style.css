@@ -1,0 +1,84 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    background: rgb(1, 17, 27);
+}
+.list-container{
+
+}
+.list{
+    max-width: 600px;
+    margin: 0px auto;
+}
+.list-item{
+    height: 200px;
+    background: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 5px;
+    width:100%;
+    transition: all 250ms linear;
+    transform:scale(0.5, 0.5);
+    display: flex;
+    overflow: hidden;
+}
+.scale{
+  transform:scale(1,1);
+}
+
+.list-item>div {
+    flex: 1;
+    margin: 10px;
+    transition:all 0.5s linear;
+    transition-delay: 150ms;
+}
+.left-box{
+    background: rgb(214, 219, 219);
+    transform: translateX(-150%);
+}
+.right-box{
+    transform: translateX(150%);
+}
+
+.info{
+    padding: 1em;
+}
+.info > div{
+    transform: translateX(300px);
+    transition: all 200ms linear;
+}
+.info .name{
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(36, 35, 35);
+}
+.info .title{
+    font-size: 1.2em;
+    margin: 10px 0px;
+}
+.info .description{
+    color: rgb(117, 117, 117);
+    
+}
+.scale .left-box {
+    transform: translateX(0%);
+}
+
+.scale .right-box {
+    transform: translateX(0%);
+}
+.scale .info .name {
+    transition-delay: 200ms;
+}
+.scale .info .title {
+    transition-delay: 500ms;
+}
+.scale .info .description{
+    transition-delay: 750ms;
+}
+
+.scale .info .name,
+.scale .info .title,
+.scale .info .description
+{
+  transform: translateX(0px);
+}
