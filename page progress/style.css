@@ -1,0 +1,39 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-top: 10px;
+    ;
+}
+
+.content{
+    padding: 1em;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+.blog-title{
+    font-weight: bold;
+    font-size: 2em;
+}
+.pad{
+    height: 1000px;
+}
+
+.progress {
+    position: fixed;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.progress .bar {
+    height: 100%;
+    width: 10%;
+    background: linear-gradient(90deg, rgb(219, 12, 150), blue);
+    transition: width 300ms linear;
+}

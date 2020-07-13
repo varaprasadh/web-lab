@@ -1,0 +1,36 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding-top: 10px;;
+}
+
+.screen{
+    height: 100vh;
+    transition: all 300ms linear;
+    padding: 1em;
+}
+
+.screen .box{
+    width: 100%;
+    height: 100%;
+    background: rgb(51, 51, 51);
+    transition: all 16ms linear;
+}
+
+.progress {
+    position: fixed;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.progress .bar {
+    height: 100%;
+    width: 10%;
+    background: linear-gradient(90deg, red, blue);
+    transition: width 300ms linear;
+}
