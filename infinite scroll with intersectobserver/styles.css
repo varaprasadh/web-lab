@@ -1,0 +1,49 @@
+
+body{
+    background: black;
+}
+.container{
+    display: flex; 
+
+}
+.list-container{
+  flex: 1;
+  max-width: 400px;
+  margin: auto;
+}
+.list-item{
+    padding: 1em;
+    margin:10px 0px;
+    background: rgb(255, 255, 255);
+}
+
+
+.loader{
+  height: 10px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid cyan;
+}
+.loader .bar {
+  height: 100%;
+  width: 30px;
+  background: black;
+  position: absolute;
+  animation: load 1s linear infinite;
+}
+
+@keyframes load{
+    0%{
+      width:10%;
+      left: 0%;
+    }
+    90%{
+     width: 50%;
+     left: 70%;
+    }
+    100%{
+        left: 100%;
+    }
+}

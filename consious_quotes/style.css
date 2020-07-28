@@ -1,0 +1,122 @@
+html,body{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    position: sticky;
+    top: 0px;
+}
+.quotes-container {
+        position: relative;
+        max-width: 800px;
+        margin: auto;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:5px;
+    grid-auto-flow: dense;
+}
+.grid-header{
+    position: sticky;
+    top: 0px;
+    background: white;
+    display: flex;
+    filter: drop-shadow(1px 1px 3px rgb(95, 94, 94));
+    z-index: 2;
+}
+.header-item{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition:all 300ms linear;
+}
+.header-item.active{
+    background: rgb(81, 198, 245);;
+}
+.header-item img{
+    width: 25px;
+}
+.tile {
+    grid-column: span 2;
+    grid-row: span 2;
+    transition: all 300ms linear;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tile:hover img{
+   filter: brightness(0.9);
+}
+
+
+.tile:nth-child(5n) {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+.tile:nth-child(1) {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+
+.tile:nth-child(4),
+.tile:nth-child(5) {
+    grid-column: span 2;
+}
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.877);
+    top:0px;
+    left: 0px;
+    z-index:99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.image-container{
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    max-width: 500px;
+    filter: drop-shadow(1px 1px 3px rgb(0, 0, 0));
+    animation: fade 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
+    animation-fill-mode: forwards;
+}
+.image-container img{
+    object-fit: cover;
+    width: 100%;
+}
+.animate-in{
+   animation: fade-up 500ms linear;
+}
+@keyframes fade-up{
+    from{
+        transform: translateY(300px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes fade{
+    from{
+        opacity:0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

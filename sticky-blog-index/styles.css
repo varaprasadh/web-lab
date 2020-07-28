@@ -1,0 +1,56 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    padding: 1em;
+}
+nav{
+    background: black;
+    padding: 10px;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+}
+
+.container article{
+    display: flex;
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    filter: drop-shadow(1px 1px 2px rgb(124, 124, 124));
+}
+
+.article-title{
+    color: cyan;
+    background: black;
+    padding: 1em;
+    font-size: 1.2em;
+    position: sticky;
+    top:0px;
+    margin-right: 3em;
+}
+.container article section{
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    padding: 1em;
+}
+.author {
+    padding: 1em;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+}
+.author .img{
+   width: 75px;
+   height: 75px;
+   background: rgb(230, 226, 226);
+   border-radius: 50%;
+}
+.author .title{
+  font-weight: bold;
+}
