@@ -1,4 +1,3 @@
-window.onload=()=>{
     const grid_container=document.querySelector(".container");
     const gridBtn = document.querySelector(".grid-button");
     const listBtn = document.querySelector(".list-button");
@@ -39,5 +38,4 @@ window.onload=()=>{
         if(e.target!=modal) return;
      modal.style.display="none";   
     });
-
-}
+    
